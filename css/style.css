@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: auto;
+    background: #86e0b6 ;
+    overflow: hidden;
+}
+header img{
+    max-width: 80%;
+    flex-direction: row ;
+    justify-content: center;
+    display: flex;
+}
+#menu_header nav{
+    display: block;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+nav ul li a{
+    list-style:none;
+    background: #5dd19b;
+    font-size: 100%;
+    margin: 1% ;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    justify-content: center;
+    padding: 3%;
+    text-align: center;
+    display: block ;
+    flex-direction: row ;
+    position: relative;
+    cursor: pointer;
+}
+/*nav ul li a{
+    color:#ffffff;
+    display:block;
+    text-decoration: none;
+    padding:.5em 2em;
+    text-align: center;
+    font-size: 10PX;   
+    border-bottom-color:#ffffff;
+    margin-bottom: 1px;
+}*/
+div nav{
+    background: #86e0b6;
+}
+#menu a:hover{
+    background: rgb(78, 177, 139);
+}
+
+section {
+    width: 100%;
+}
+#banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+#banner img{
+    width: 100%;
+}
+#banner .container{
+    position: absolute;
+    top:70%;
+    left: 55%;
+    transform: translateX(-50%);
+    padding-right: 60%;
+}
+#banner h2{
+    font-size: 2.5vh;
+    font-family: monospace;
+}
+#c-slider{
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#slider{
+    display: flex;
+    width: 300%;
+    background: #86e0b6;
+}
+#slider section{
+    width: 100%;
+    height: 55vh;
+}
+#slider img{
+    display: block;
+    width: 100%;
+}
+#btn-prev, #btn-next{
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255, 255, 0.5);
+    color: rgb(134, 224, 182);
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+}
+#btn-prev:hover, #btn-next:hover{
+    background: rgba(255,255, 255, 1);
+}
+#btn-prev{
+    left: 10px;
+}
+#btn-next{
+    right: 10px;
+}
+div .sociales{
+    background: #5dd19b;
+    height: auto;
+    
+}
+
+.sociales{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 5vh;
+    padding: 3vh;    
+}
+.sociales a{
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: #86e0b6;
+    border-radius: 50%;
+    margin: 5px;
+    overflow: hidden;
+}
+
+#rescate{
+    text-align: right;
+    margin-bottom: 35px;
+    padding: 5px;
+}
+
+#rescate h1{
+    font-size: 4vh;
+}
+#rescate h5{
+    font-size: 2vh;
+    color: rgb(161, 161, 161);
+}
+#rescate p{
+    font-size: 2.2vh;
+    font-family: arial;
+}
+#rescate img{
+    max-width: 55%;
+}
+
+#crowd{
+    padding: 5px;
+    text-align: left;
+}
+#crowd img{
+    max-width: 60%;
+}
+#crowd h1{
+    font-size: 4vh;
+}
+#crowd h5{
+    font-size: 2.3vh;
+    color: rgb(161, 161, 161);
+}
+#crowd p{
+    font-size: 2.2vh;
+    font-family: arial;
+}
+#crowd a{
+    display: block;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 3px;
+    margin-top: 10px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+#rescatados{
+    background: #86e0b6;
+    width: 100%;
+}
+.galeria{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    list-style: none;
+}
+.galeria li{
+    margin: 5px;
+}
+
+.modal{
+    display: none;
+}
+
+.modal:target{
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.modal h3{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    margin: 15px 0;
+}
+.imagen{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen a{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.imagen a:nth-child(2){
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img{
+    width: 70vw;
+    height: 70vh;
+    max-width: 100%;
+    border: 7px solid rgb(134, 224, 182);
+}
+.cerrar{
+    display: block;
+    background: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    border-radius: 50%;
+    line-height: 25px;
+}
+footer{
+    background: rgb(223, 220, 220);
+    height: 80px;
+}
+
+.copy{
+    padding: 5px 25px;
+    font-size: 15px;
+}
+@media (min-width:1024px ){
+    header{
+        height: 12vh;
+    }
+    #menu{
+        position: static;
+        width: auto;
+        height: auto;
+        float: right;
+        display: flex;
+    }
+    .container {
+        width: 1000px;
+    }
+    section #somos{
+        display: flex;
+        
+
+    }
+}
+/*media*/
+@media screen and (min-width:480px){
+    nav ul{
+        display: flex;
+        justify-content: space-around;      
+    }
+    .links ul li{
+        display: -webkit-flex;
+        margin-right: 15%;     
+    }
+    .logo{
+        height: auto;  
+        text-align: center;       
+    }    
+    nav ul li a{
+        background: #86e0b6;
+    }
+}
+form{
+    background: #86e0b6;
+    text-align: center;
+    width: 100%;
+    height: 110vh;
+    font-size: 16px;
+    border: 3px solid rgb(0, 0, 0);
+    border-bottom: 1px solid lighten(rgb(0, 0, 0),85%);
+}
+form label{
+    top:3vh;
+    left: 2vw;
+    font-size: 3vh;
+}
+form imput{
+    position: relative;
+}
+/*icons*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?yto20s');
+    src:  url('fonts/icomoon.eot?yto20s#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?yto20s') format('truetype'),
+      url('fonts/icomoon.woff?yto20s') format('woff'),
+      url('fonts/icomoon.svg?yto20s#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better; Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+  }
+  .icon-envelope:before {
+    content: "\e900";
+  }
+  .icon-google-plus:before {
+    content: "\ea8b";   
+  }
+  .icon-facebook:before {
+    content: "\ea90";  
+  }
+  .icon-instagram:before {
+    content: "\ea92";  
+  }
+/*
+logo
+*/
+.logo{  
+    margin-left: 0.5vh;
+    padding-top: 10px;
+    width: 100%; 
+}
